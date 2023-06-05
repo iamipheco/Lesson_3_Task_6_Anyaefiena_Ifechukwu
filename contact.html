@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script
+            src="https://kit.fontawesome.com/e5668ca399.js"
+            crossorigin="anonymous"
+        ></script>
+        <link rel="stylesheet" href="./css/style.css" />
+        <title>Ipheco Chris | Home - My Portfolio</title>
+    </head>
+    <body>
+        <header>
+            <nav class="nav-header">
+                <div class="head-logo">
+                    <img
+                        src="./Images/iphe-logo.png"
+                        alt="logo-img"
+                        class="logo-img"
+                    />
+                </div>
+                <div class="nav-links">
+                    <a href="./index.html">Home</a>
+                    <a href="./about.html">About</a>
+                    <a href="./experience.html">Experience</a>
+                    <a href="./myproject.html">My Projects</a>
+                    <a href="./contact.html">Contact</a>
+                </div>
+                <div class="nav-btns">
+                    <button>Resume</button>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div class="s-icons">
+                <h3>Follow me on my social handles:</h3>
+                <a href="https://facebook.com/iamipheco/">
+                    <span class="fa-brands fa-facebook"></span>
+                </a>
+                <a href="https://twitter.com/iam_ipheco/">
+                    <span class="fa-brands fa-twitter"></span>
+                </a>
+                <a href="https://linkedin.com/in/iamipheco/">
+                    <span class="fa-brands fa-linkedin"></span>
+                </a>
+                <a href="https://instagram.com/iam__ipheco/">
+                    <span class="fa-brands fa-instagram"></span>
+                </a>
+                <a href="https://github.com/iamipheco/">
+                    <span class="fa-brands fa-github"></span>
+                </a>
+            </div>
+            <div class="main-container">
+                <div class="main-img">
+                    <img
+                        src="./Images/ipheco trans.png"
+                        alt="ipheco-trans"
+                        class="main-pic"
+                    />
+                </div>
+                <div class="main-content">
+                    <form method="POST" action="send-mail.php">
+                        <h2>Send an Email</h2>
+                        <div class="form-cont">
+                            <div class="form-col">
+                                <label for="name">Name:</label>
+                                <input
+                                    type="text"
+                                    id="name"
+                                    name="name"
+                                    required
+                                /><br />
+                            </div>
+                            <div class="form-col">
+                                <label for="email">Email:</label>
+                                <input
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    required
+                                /><br />
+                            </div>
+                            <div class="form-col">
+                                <label for="message">Message:</label>
+                                <textarea
+                                    id="message"
+                                    name="message"
+                                    required>
+                                </textarea>
+                                <br />
+                            </div>
+                            <div class="submit-btn">
+                                <input type="submit" value="Submit" />
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
