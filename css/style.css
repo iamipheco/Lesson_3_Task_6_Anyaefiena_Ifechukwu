@@ -1,16 +1,84 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -18,26 +86,34 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
 	display: block;
 }
 
-body {
-	line-height: 1;
-	width: 100%;
-}
-
-ol, ul {
+ol,
+ul {
 	list-style: none;
 }
 
-blockquote, q {
+blockquote,
+q {
 	quotes: none;
 }
 
-blockquote::before, blockquote::after,
-q::before, q::after {
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
 	content: '';
 	content: none;
 }
@@ -51,3 +127,412 @@ table {
 
 
 /* Write your css below here */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(0.5turn, #efeee1, 70%, #d1c1fd ) ;
+  height: 100%;
+  min-height: 100vh;
+}
+
+.head-logo img {
+  height: 50px;
+}
+
+header {
+  padding: 20px;
+}
+
+.nav-header {
+	display: grid;
+	grid-template-areas: 
+	"head-logo head-logo nav-links nav-btns";
+}
+
+.head-logo {
+	grid-area: head-logo;
+	display: flex;
+	align-items: center;
+}
+
+.nav-links {
+	grid-area: nav-links;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-bottom: 10px;
+	gap: 50px;
+}
+
+.nav-btns {
+	grid-area: nav-btns;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.nav-btns button {
+  border: 1.6px solid #6a00cd;
+  border-radius: 5px;
+  color: #510e91;
+  padding: 7px;
+  background-color: transparent;
+}
+
+.nav-btns button:hover {
+  color: #f1f1f1;
+  background-color: #6a00cd;
+}
+
+.s-icons a {
+  color: #6a00cd;
+  text-decoration: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+}
+
+.nav-links a:visited {
+  color: #3d0925;
+}
+
+.nav-links a:active {
+    color: #927b92;
+}
+
+.nav-links a:hover {
+  color: #be1cbe;
+}
+
+main {
+  position: relative;
+  padding-top: 100px;
+  
+}
+
+.main-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.main-img {
+  grid-column: 1/2;
+  padding-left: 50px;
+}
+
+.main-content {
+  grid-column: 2/4 ;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px 50px 1px;
+  padding-right: 130px;
+}
+
+.main-img img {
+  height: 500px;
+}
+
+a.main-btn {
+  background-color: #6a00cd;
+  padding: 12px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: aliceblue;
+  width: 110px;
+  margin-top: 10px;
+}
+
+a.main-btn-home {
+  background-color: #6a00cd;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 12px;
+  padding: 13px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: aliceblue;
+  width: 120px;
+  margin-top: 10px;
+}
+
+a.main-btn:hover {
+  background-color: #f1f1f1;
+  color: #6a00cd;
+  border: 1px solid #6a00cd;
+}
+
+a.main-btn-home:hover {
+  background-color: #f1f1f1;
+  color: #6a00cd;
+  border: 1px solid #6a00cd;
+}
+
+p {
+  color: #4e3863;
+  font-size: 15px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+
+h1 {
+  color: #461a6e;
+  font-size: 40px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h3 {
+  color: #6a00cd;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 13px;
+  padding-left: 2px;
+}
+
+h2 {
+  color: #5e3b7e;
+  font-size: 30px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+  margin-bottom: 10px;
+}
+
+h4 {
+  color: #461a6e;
+  font-size: 25px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-bottom: 10px;
+}
+
+ul li {
+  padding-bottom: 10px;
+  color: #4e3863;
+  font-size: 15px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+strong {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 13px;
+  color: #5403a0;
+}
+
+.s-icons {
+  color: #6a00cd;
+  padding-top: 20px;
+  position: absolute ;
+  top: -20px;
+  right: 135px;
+}
+
+
+.s-icons a:hover {
+  color: rgb(218 11 218);
+  text-decoration: none;
+}
+
+.s-icons h3 {
+  font-size: 14px;
+  color: #3b2a6a;
+  padding-bottom: 10px;
+}
+
+form {
+  background-color: #f2effb;
+  padding: 40px;
+  box-shadow: 0.5px 0.2px 7px rebeccapurple;
+  width: 500px;
+  margin-top: 40px;
+  border-radius: 10px;
+}
+
+form h2 {
+  font-size: 15px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+#message {
+  width: 100%;
+  margin-bottom: 10px ;
+  padding:10px;
+  border: 1px solid #d2b5ee;
+  border-radius: 5px;
+  outline: none;
+}
+
+textarea {
+  resize: none;
+  height: 100px;
+}
+
+input[type="submit"]  {
+  color: aliceblue;
+  padding: 7px;
+  margin-left: 2px;
+  background-color: #6a00cd;
+  border: none;
+  border-radius: 5px;
+}
+
+input[type="submit"]:hover  {
+  background-color: aliceblue;
+  color: #6a00cd;
+  border: 1px solid #6a00cd;
+}
+
+
+@media screen and (width >= 1100px) {
+  .typewriter {
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 6s linear infinite;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+  
+    to {
+      width:100%;
+    }
+  }
+}
+
+@media screen and (width <= 1300px) {
+  .main-img img {
+    height: 500px;
+  }
+  
+  .main-content {
+    padding-right: 50px;
+  }
+
+  a.main-btn {
+    background-color: #6a00cd;
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: aliceblue;
+    width: 110px;
+    margin-top: 10px;
+  }
+  
+  a.main-btn-home {
+    background-color: #6a00cd;
+    padding: 8px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: aliceblue;
+    width: 120px;
+    margin-top: 10px;
+  }
+  
+  
+  h1 {
+    color: #461a6e;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  h3 {
+    color: #6a00cd;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 12px;
+    padding-left: 2px;
+  }
+  
+  h2 {
+    color: #5e3b7e;
+    font-size: 24px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    margin-bottom: 10px;
+  }
+  
+  h4 {
+    color: #461a6e;
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 10px;
+  }
+
+  form {
+    padding: 30px;
+    width: 450px;
+    margin-top: 50px;
+  }
+  
+}
+
+@media screen and (width <= 950px){
+  .main-container {
+    grid-template-columns: 1fr;
+  }
+
+  .main-img {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  
+  .main-img img {
+    display: none;
+  }
+  
+  .main-content {
+    display: flex;
+    justify-self: center;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    justify-content: center;
+    padding-left: 150px;
+  }
+
+
+  form {
+    padding: 30px;
+    width: 500px; 
+  }
+}
+
+@media screen and (width <= 850px) {
+  .main-content {
+    padding: 70px;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .main-img img {
+    display: none;
+  }
+
+  form {
+    padding: 30px;
+    width: 400px;
+  }
+
+}
+
+@media screen and (width <= 650px) {
+  .main-content {
+    padding: 50px;
+  }
+  
+  form {
+    padding: 30px;
+    width: 300px;
+  }
+}
